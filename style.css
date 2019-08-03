@@ -1,0 +1,222 @@
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: 'Lato', 'Lucida Grande', 'Lucida Sans Unicode', Tahoma, Sans-Serif;
+}
+
+body {
+    background-color: white;
+}
+
+.body-container {
+    background-color: rgba(233, 235, 235, 0.973);
+    min-height: 100%;
+    padding: .5em 1.5em 0 1.5em;
+    margin: 0 .5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+/*Need to do work below*/
+header, main, footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 0;
+    font-size: 2em;
+}
+
+header h2 {
+    margin-top: 0;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.image {
+    width: 80%;
+    height: 100%;
+}
+
+.img-caption {
+    font-size: .9em;
+}
+
+.tribute-info h2 {
+    font-size: 1.2em;
+}
+
+.tribute-info ul {
+    text-align: left;
+    margin-bottom: 2em;
+}
+
+.tribute-info li {
+    color: blue;
+    font-weight: bold;
+}
+
+.bio-section {
+    margin-bottom: 2em;
+}
+
+.hr1 {
+    width: 80%;
+    margin-bottom: 2.2em;
+}
+
+.hr2, .hr3 {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.charlie-quote {
+    margin: .5em auto;
+}
+
+.charlie-quote :nth-child(1) {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.charlie-quote :nth-child(2) {
+    font-size: .9em;
+}
+
+.read-more {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.read-more a {
+    text-decoration: none;
+    color: blue;
+}
+
+footer {
+    margin-bottom: 0;
+    font-size: .9em;
+}
+
+@media (min-width: 600px) {
+    .body-container {
+        margin: auto 2em;
+        background-color: rgba(84, 243, 216, 0.2);
+    }
+
+    header h1 {
+        font-size: 3em;
+    }
+
+    header h2 {
+        font-style: italic;
+    }
+
+    .image {
+        width: 100%;
+    }
+
+    ul {
+        margin: auto 30%;
+    }
+
+    .tribute-info li {
+        color: rgb(175, 0, 0);
+    }
+
+    .bio-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        text-align: left;
+        background-color: rgba(209, 0, 146, 0.2);
+        font-weight: bold;
+        margin-bottom: 2em;
+    }
+
+    .bio-info {
+        width: 40%;
+    }
+
+    .charlie-quote {
+        margin: 1.5em 5em;
+        font-size: 1.2em;
+    }
+
+    .read-more {
+        margin: auto 2em;
+    }
+
+    .read-more a:hover {
+        color: red;
+    }
+}
+
+@media (min-width: 1000px) {
+    .body-container {
+        background-color: rgba(255, 251, 0, 0.4);
+    }
+
+    header {
+        margin-bottom: 1.6em;
+    }
+
+    header h1 {
+        font-size: 4em;
+    }
+
+    header h2 {
+        font-size: 2em;
+    }
+
+    .img-caption {
+        font-size: 1.2em;
+    }
+
+    .tribute-info h2 {
+        font-size: 2em;
+        text-decoration: underline;
+    }
+
+    .tribute-info li {
+        color: green;
+    }
+
+    ul {
+        margin-left: 30%;
+        margin-right: 0;
+    }
+
+    ul li {
+        list-style: none;
+        font-size: 1.7em;
+    }
+
+    ul > li:before {
+        content: "-  ";
+        width: 1em;
+    }
+
+    .bio-section {
+        margin: 2em 4em;
+        text-align: center;
+        background-color: rgba(50, 50, 241, .3);
+    }
+
+    .bio-info {
+        font-size: 1.6em;
+    }
+
+    .charlie-quote, .read-more {
+        margin: auto 20%;
+        font-size: 1.5em;
+    }
+}
